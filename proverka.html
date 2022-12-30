@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Размытие фона</title>
+  <style>
+   section {
+    color: #fff; /* Цвет текста */
+    padding: 1rem; /* Поля вокруг текста */
+    position: relative; /* Относительное позиционирование */
+   }
+   section::before {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; top: 0; bottom: 0;
+    z-index: -1;
+    background: url("https://live.staticflickr.com/5735/21685446378_1138721e96_h.jpg") center / cover no-repeat;
+    filter: blur(5px);
+   }
+  </style>
+ </head>
+ <body>
+  <section>Суспензия, если рассматривать процессы в рамках 
+   специальной теории относительности, отражает электронный кварк.</section>
+ </body>
+</html>
